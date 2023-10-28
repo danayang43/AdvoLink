@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86FA9A6D2AEC85CC00DFA76C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */; };
 		A0534BD42AEC29E10045EEB3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0534BD32AEC29E10045EEB3 /* ProfileView.swift */; };
 		C599B6882AE88B9F009835DE /* AdvoLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599B6872AE88B9F009835DE /* AdvoLinkApp.swift */; };
 		C599B68A2AE88B9F009835DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599B6892AE88B9F009835DE /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		A0534BD32AEC29E10045EEB3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C599B6842AE88B9F009835DE /* AdvoLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvoLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C599B6872AE88B9F009835DE /* AdvoLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvoLinkApp.swift; sourceTree = "<group>"; };
@@ -173,9 +175,10 @@
 			isa = PBXGroup;
 			children = (
 				C599B6BA2AE88D0B009835DE /* OnBoardingPage.swift */,
+				C599B6BC2AE891A7009835DE /* LoginPage.swift */,
 				E70F5B092AEB5144008E26FA /* CreateView.swift */,
 				A0534BD32AEC29E10045EEB3 /* ProfileView.swift */,
-				C599B6BC2AE891A7009835DE /* LoginPage.swift */,
+				86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */,
 				C599B6C12AE8942B009835DE /* CustomCorners.swift */,
 			);
 			path = View;
@@ -334,6 +337,7 @@
 				E70F5B082AEB5121008E26FA /* NewPostModel.swift in Sources */,
 				A0534BD42AEC29E10045EEB3 /* ProfileView.swift in Sources */,
 				C599B6BD2AE891A7009835DE /* LoginPage.swift in Sources */,
+				86FA9A6D2AEC85CC00DFA76C /* UserSettings.swift in Sources */,
 				E70F5B0A2AEB5144008E26FA /* CreateView.swift in Sources */,
 				C599B6C22AE8942B009835DE /* CustomCorners.swift in Sources */,
 				C599B6C02AE891F8009835DE /* LoginPageModel.swift in Sources */,
