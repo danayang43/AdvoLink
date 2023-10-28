@@ -28,6 +28,7 @@
 		C599B6C92AE8B3AE009835DE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C599B6C82AE8B3AE009835DE /* GoogleService-Info.plist */; };
 		E70F5B082AEB5121008E26FA /* NewPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F5B072AEB5121008E26FA /* NewPostModel.swift */; };
 		E70F5B0A2AEB5144008E26FA /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70F5B092AEB5144008E26FA /* CreateView.swift */; };
+		E754B00F2AED87A300574579 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754B00E2AED87A300574579 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		C599B6C82AE8B3AE009835DE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E70F5B072AEB5121008E26FA /* NewPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostModel.swift; sourceTree = "<group>"; };
 		E70F5B092AEB5144008E26FA /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		E754B00E2AED87A300574579 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				A0534BD32AEC29E10045EEB3 /* ProfileView.swift */,
 				86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */,
 				C599B6C12AE8942B009835DE /* CustomCorners.swift */,
+				E754B00D2AED878200574579 /* TabBar */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,14 @@
 				E70F5B072AEB5121008E26FA /* NewPostModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E754B00D2AED878200574579 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E754B00E2AED87A300574579 /* MainTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +350,7 @@
 				C599B6BD2AE891A7009835DE /* LoginPage.swift in Sources */,
 				86FA9A6D2AEC85CC00DFA76C /* UserSettings.swift in Sources */,
 				E70F5B0A2AEB5144008E26FA /* CreateView.swift in Sources */,
+				E754B00F2AED87A300574579 /* MainTabView.swift in Sources */,
 				C599B6C22AE8942B009835DE /* CustomCorners.swift in Sources */,
 				C599B6C02AE891F8009835DE /* LoginPageModel.swift in Sources */,
 				C599B68A2AE88B9F009835DE /* ContentView.swift in Sources */,
