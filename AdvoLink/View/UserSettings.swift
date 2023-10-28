@@ -19,19 +19,19 @@ struct UserSettings : View {
                 HStack{
                     Text("Personal Settings").font(.title)
                         .foregroundColor(Color.purple.opacity(0.5))
-                        .position(x: 100, y: 0)
+                        .position(x: 100, y: -20)
                     Spacer()
                 }.padding()
                 .padding(.top,10)
             }.frame(height: 100)
-            VStack(spacing:10){
+            VStack(spacing: 0){
                 btnView(image: "acount", name: "Account")
                 btnView(image: "notification", name: "Notifications")
                 btnView(image: "privacy", name: "Privacy")
                 btnView(image: "helpcenter", name: "Help Center")
                 btnView(image: "general", name: "General")
                 btnView(image: "about", name: "About Us")
-            }.position(x: 150, y: 200)
+            }.position(x: 150, y: 160)
             Spacer()
         }
     }
