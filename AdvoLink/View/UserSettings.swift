@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct UserSettings : View {
     var body: some View {
         VStack{
@@ -16,13 +17,8 @@ struct UserSettings : View {
                     Spacer()
                 }
                 HStack{
-                    VStack(alignment: .leading, spacing: 45, content: {
-                        Button(action: {
-                        }) {
-                            Image(systemName: "chevron.left").font(.title)
-                        }
-                        Text("Personal Settings").font(.title)
-                    }).foregroundColor(Color.purple.opacity(0.5))
+                    Text("Personal Settings").font(.title)
+                        .foregroundColor(Color.purple.opacity(0.5))
                     Spacer()
                 }.padding()
                 .padding(.top,10)
@@ -30,8 +26,8 @@ struct UserSettings : View {
                     Image("name").overlay(Text("K").foregroundColor(.white).font(.title))
                     Spacer()
                 }.padding(.top,30)
-            }.frame(height: 175)
-            VStack(spacing:15){
+            }.frame(height: 100)
+            VStack(spacing:10){
                 btnView(image: "acount", name: "Account")
                 btnView(image: "notification", name: "Notifications")
                 btnView(image: "privacy", name: "Privacy")
