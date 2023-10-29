@@ -3,7 +3,7 @@
 //  test
 //
 //  Created by Sahana Suresh on 10/26/23.
-//
+//  further improvements need to be made: tag section and also recent events/posts?
 
 import SwiftUI
 
@@ -59,7 +59,7 @@ struct ProfileView: View {
                 }
                 .bold()
                 .frame(width:100, height:50)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .clipShape(RoundedRectangle(cornerRadius: 5))
                 .foregroundColor(.white)
                 .background(.purple)
                 .padding(5)
