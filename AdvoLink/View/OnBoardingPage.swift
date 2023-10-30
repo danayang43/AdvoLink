@@ -16,19 +16,20 @@ struct OnBoardingPage: View {
             VStack{
                 Image("advolink")
                     .resizable()
+                    .frame(width:350, height:350)
                 
-                NavigationLink(destination: LoginPage()) {
-                    ButtonView()
+                NavigationLink(destination: Login()) {
+                               ButtonView()
                 }
             }
             .padding()
             .padding(.top,getRect().height < 750 ? 20 : 0)
             .frame(maxWidth:.infinity, maxHeight: .infinity)
-            .background(.purple)
+            .background(Color("Purple"))
             .overlay{
                 Group{
                     if showLoginPage{
-                        LoginPage()
+                        Login()
                             .transition(.move(edge: .bottom))
                     }
                 }

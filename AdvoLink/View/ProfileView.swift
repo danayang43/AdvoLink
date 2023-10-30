@@ -3,83 +3,80 @@
 //  test
 //
 //  Created by Sahana Suresh on 10/26/23.
-//  further improvements need to be made: tag section and also recent events/posts?
-
+//
 import SwiftUI
-
+import SDWebImageSwiftUI
 struct ProfileView: View {
     @State private var name = ""
     @State private var socialMedia = ""
     @State private var bio = ""
     @State private var isEditing = false
+    var edges = UIApplication.shared.windows.first?.safeAreaInsets
+    
+    @StateObject var settingsData = SettingsViewModel()
     var body: some View {
         NavigationView{
             VStack(spacing: 150){
-                HStack(spacing: 5){
-                    VStack{
-                        Image(systemName: "person.fill")
+                if settingsData.userInfo.pic != ""{
+                    ZStack{
+                        WebImage(url: URL(string: settingsData.userInfo.pic)!)
                             .resizable()
-                            .frame(width: 100, height: 100)
-                            .padding()
-                            .position(x: 80, y: 60)
-                        Button(action: {
-                        }) {
-                            Text("Add Profile Picture")
-                                .foregroundColor(.purple)
-                                .position(x: 80, y: 80)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 125, height: 125)
+                            .clipShape(Circle() )
+                        if settingsData.isLoading{
+                            ProgressView()
                         }
-                        
                     }
-                    
-                    VStack{
-                        TextField("Name", text: $name)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .frame(width: 200)
-                            .position(x: 75, y: 40)
-                        TextField("Social Media", text: $socialMedia)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .frame(width:200)
-                            .position(x: 75, y: 25)
+                    .padding(.top, 25)
+                    .onTapGesture{
+                        settingsData.picker.toggle()
                     }
                 }
-                
-                TextField("Tell us about yourself!", text: $bio, axis: .vertical)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .lineLimit(5)
-                    .padding()
-                    .frame(maxWidth: 400)
-                    .frame(minHeight: 100)
-                    .position(x:200,y:-50)
-                
-                Button(action: {
-                    isEditing.toggle()
-                })
+                HStack(spacing: 15)
                 {
-                    Text(isEditing ? "Save" : "Edit")
+                    Text(settingsData.userInfo.username)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.black)
+                    
+                    Button(action: {settingsData.updateDetails(field: "Name")}){
+                        Image(systemName: "pencil.circle.fill")
+                            .foregroundColor(.black)
+                    }
                 }
-                .bold()
-                .frame(width:100, height:50)
-                .clipShape(RoundedRectangle(cornerRadius: 5))
-                .foregroundColor(.white)
-                .background(.purple)
-                .padding(5)
-                .position(x:200, y:-200)
-                .navigationTitle("Profile").foregroundColor(.purple)
-                .navigationBarItems(
-                    trailing:
-                        NavigationLink(
-                            destination: UserSettings(),
-                            label: {
-                                Text("Settings").foregroundColor(.purple)
-                                Image(systemName:"gear").foregroundColor(.purple)
-                            })
-                )
+                .padding()
+                
+                HStack(spacing: 15)
+                {
+                    Text(settingsData.userInfo.bio)
+                        .font(.title)
+                        .foregroundColor(.black)
+                    
+                    Button(action: {settingsData.updateDetails(field: "Bio")}){
+                        Image(systemName: "pencil.circle.fill")
+                            .foregroundColor(.black)
+                    }
+                }
+                .padding()
+                
+                Button(action: settingsData.logOut, label: {
+                    Text("Logout")
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width - 100)
+                        .background(Color("Purple"))
+                        .clipShape(Capsule())
+                })
+                .padding()
+            }
+            .sheet(isPresented: $settingsData.picker) {
+                ImagePicker(picker: $settingsData.picker, img_Data: $settingsData.img_data)
+            }
+            .onChange(of: settingsData.img_data){ (newData) in
+
             }
         }
     }
 }
-
-#Preview {
-    ProfileView()
-}
-

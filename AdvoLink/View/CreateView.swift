@@ -35,7 +35,7 @@ struct CreateView: View {
                 .frame(width:100, height:50)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .foregroundColor(.white)
-                .background(.purple)
+                .background(Color("Purple"))
                 .padding(5)
             }
             .navigationTitle("Create a new post")

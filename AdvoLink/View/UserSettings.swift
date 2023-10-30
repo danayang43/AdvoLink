@@ -18,7 +18,7 @@ struct UserSettings : View {
                 }
                 HStack{
                     Text("Personal Settings").font(.title)
-                        .foregroundColor(Color.purple.opacity(0.5))
+                        .foregroundColor(Color("Purple").opacity(0.5))
                         .position(x: 100, y: -20)
                     Spacer()
                 }.padding()
