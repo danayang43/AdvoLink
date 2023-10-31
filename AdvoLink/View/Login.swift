@@ -12,6 +12,7 @@ struct Login: View {
             HStack{
                 Text("Login")
                     .fontWeight(.heavy)
+                    .font(.custom(customFont, size: 20))
                 
                 Spacer(minLength: 0)
             }

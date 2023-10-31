@@ -24,6 +24,7 @@
 		86B33C762AEEFDCA00545B31 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 86B33C752AEEFDCA00545B31 /* FirebaseStorage */; };
 		86B33C782AEEFDCA00545B31 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 86B33C772AEEFDCA00545B31 /* FirebaseStorageCombine-Community */; };
 		86B33C7A2AEEFE1300545B31 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 86B33C792AEEFE1300545B31 /* FirebaseAuthCombine-Community */; };
+		86B33C7C2AF0A16600545B31 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B33C7B2AF0A16600545B31 /* ExploreView.swift */; };
 		86FA9A6D2AEC85CC00DFA76C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */; };
 		A0534BD42AEC29E10045EEB3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0534BD32AEC29E10045EEB3 /* ProfileView.swift */; };
 		C599B6882AE88B9F009835DE /* AdvoLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C599B6872AE88B9F009835DE /* AdvoLinkApp.swift */; };
@@ -73,6 +74,7 @@
 		86B33C642AEEFB6C00545B31 /* UploadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImage.swift; sourceTree = "<group>"; };
 		86B33C672AEEFC2000545B31 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		86B33C692AEEFC3100545B31 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		86B33C7B2AF0A16600545B31 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		A0534BD32AEC29E10045EEB3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C599B6842AE88B9F009835DE /* AdvoLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdvoLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +226,7 @@
 				C599B6BC2AE891A7009835DE /* Login.swift */,
 				86B33C602AEEFB1200545B31 /* Register.swift */,
 				E70F5B092AEB5144008E26FA /* CreateView.swift */,
+				86B33C7B2AF0A16600545B31 /* ExploreView.swift */,
 				A0534BD32AEC29E10045EEB3 /* ProfileView.swift */,
 				86FA9A6C2AEC85CC00DFA76C /* UserSettings.swift */,
 				C599B6C12AE8942B009835DE /* CustomCorners.swift */,
@@ -419,6 +422,7 @@
 				C599B68A2AE88B9F009835DE /* ContentView.swift in Sources */,
 				86B33C632AEEFB4800545B31 /* ImagePicker.swift in Sources */,
 				C599B6BB2AE88D0B009835DE /* OnBoardingPage.swift in Sources */,
+				86B33C7C2AF0A16600545B31 /* ExploreView.swift in Sources */,
 				C599B6882AE88B9F009835DE /* AdvoLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

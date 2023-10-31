@@ -40,15 +40,15 @@ struct OnBoardingPage: View {
 
 struct ButtonView: View {
     var body: some View {
-        Text("Get started")
+        Text("Get Started")
             .font(.custom(customFont, size: 20))
             .fontWeight(.semibold)
             .padding(.vertical, 18)
             .frame(maxWidth: .infinity)
-            .background(Color.white)
+            .background(Color("Purple2"))
             .cornerRadius(10)
             .shadow(color: Color.black.opacity(0.1), radius: 5, x: 5, y: 5)
-            .foregroundColor(Color("Purple"))
+            .foregroundColor(Color.white)
         
             .padding(.horizontal, 30)
             .offset(y: getRect().height < 750 ? 20:40)
